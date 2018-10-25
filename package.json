@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-get-duplicates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Function returns every extra instance of each array item",
   "main": "",
   "scripts": {

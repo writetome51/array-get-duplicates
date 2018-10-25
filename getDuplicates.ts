@@ -1,4 +1,4 @@
-import { getIndexesOf } from '@writetome51/array-get-indexes-intermediate/getIndexesOf';
+import { getIndexesOf } from '@writetome51/array-get-indexes-intermediate';
 import { getUniqueItems } from '@writetome51/array-get-unique-items/getUniqueItems';
 
 
