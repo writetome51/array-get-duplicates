@@ -1,14 +1,27 @@
 {
   "name": "@writetome51/array-get-duplicates",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Function returns every extra instance of each array item",
-  "main": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/array-get-duplicates.git"
+  },
+  "bugs": {
+    "url": "https://github.com/writetome51/array-get-duplicates/issues"
+  },
+  "homepage": "https://github.com/writetome51/array-get-duplicates#readme",
   "keywords": [
     "array",
-    "manipulation"
+    "manipulation",
+    "get",
+    "return",
+    "all",
+    "duplicate",
+    "duplicates"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
