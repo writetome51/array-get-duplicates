@@ -1,7 +1,7 @@
 {
   "name": "@writetome51/array-get-duplicates",
-  "version": "1.1.0",
-  "description": "Function returns every extra instance of each array item",
+  "version": "1.1.1",
+  "description": "Returns every extra instance of each array item",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,8 +27,8 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "basic-data-handling": "latest",
-    "@writetome51/array-get-indexes-intermediate": "latest",
-    "@writetome51/array-get-unique-items": "latest"
+    "basic-data-handling": "~1.0.13",
+    "@writetome51/array-get-indexes-intermediate": "~1.0.5",
+    "@writetome51/array-get-unique-items": "~1.1.0"
   }
 }
