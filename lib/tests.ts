@@ -1,4 +1,4 @@
-import { getDuplicates } from './getDuplicates';
+import { getDuplicates } from './index';
 
 
 // Test 1: it can spot array duplicates:

@@ -1,11 +1,7 @@
-To include:
+# getDuplicates(array): any[]
 
-import {getDuplicates} from '@writetome51/array-get-duplicates';
-
-getDuplicates(array): any[]
-
-Returns every extra instance of each array item.  
-(Won't work for array containing objects.  Objects will be ignored.)  
+Returns every extra instance of each `array` item.  
+(Won't work for array containing objects.  Objects will be ignored.)
 It doesn't modify the array passed into it.  
 
 Examples:
@@ -21,3 +17,9 @@ result = getDuplicates(arr);
 arr = [1, [2, 3], 6, 7, 8, 9, [2, 3]];  
 result = getDuplicates(arr);  
 // result is now [ [2,3] ]  
+
+## Loading
+```
+import {getDuplicates} from '@writetome51/array-get-duplicates';
+
+```
