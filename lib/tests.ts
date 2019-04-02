@@ -5,7 +5,8 @@ import { getDuplicates } from './index';
 let arr: any = [1, [2, 3], 10, '', 4, 5, 6, 7, 8, 9, 13, [2, 3]];
 let result = getDuplicates(arr);
 
-if (Array.isArray(result[0]) && result[0][0] === 2 && result[0][1] === 3) console.log('test 1 passed');
+if (result.length === 1 && Array.isArray(result[0]) &&
+	result[0][0] === 2 && result[0][1] === 3) console.log('test 1 passed');
 else console.log('test 1 failed');
 
 

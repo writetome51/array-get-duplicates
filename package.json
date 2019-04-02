@@ -28,8 +28,7 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "basic-data-handling": "~1.0.15",
-    "@writetome51/array-get-indexes": "~1.0.0",
+    "@writetome51/array-get-indexes": "~1.0.1",
     "@writetome51/array-get-unique-items": "~1.1.2"
   }
 }

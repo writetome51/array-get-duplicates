@@ -4,7 +4,8 @@ var index_1 = require("./index");
 // Test 1: it can spot array duplicates:
 var arr = [1, [2, 3], 10, '', 4, 5, 6, 7, 8, 9, 13, [2, 3]];
 var result = index_1.getDuplicates(arr);
-if (Array.isArray(result[0]) && result[0][0] === 2 && result[0][1] === 3)
+if (result.length === 1 && Array.isArray(result[0]) &&
+    result[0][0] === 2 && result[0][1] === 3)
     console.log('test 1 passed');
 else
     console.log('test 1 failed');

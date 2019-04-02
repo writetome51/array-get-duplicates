@@ -11,9 +11,8 @@ function getDuplicates(array) {
     var duplicatedItems = [], i = -1;
     while (++i < uniqueItems.length) {
         var indexes = array_get_indexes_1.getIndexesOf(uniqueItems[i], array);
-        var d = -1;
         // while there's still an extra instance of the item...
-        while (++d < (indexes.length - 1))
+        while ((--indexes.length) > 0)
             duplicatedItems.push(uniqueItems[i]);
     }
     return duplicatedItems;
