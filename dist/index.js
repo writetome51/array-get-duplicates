@@ -1,20 +1,13 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var array_get_indexes_1 = require("@writetome51/array-get-indexes");
-var array_get_unique_items_1 = require("@writetome51/array-get-unique-items");
+import { arrayHas } from '@writetome51/array-has';
+import { not } from '@writetome51/not';
 // Returns every extra instance of each array item.
-// Won't work for array containing objects.  Objects will be ignored.
-function getDuplicates(array) {
-    var uniqueItems = array_get_unique_items_1.getUniqueItems(array);
-    if (uniqueItems.length === array.length)
-        return [];
-    var duplicatedItems = [], i = -1;
-    while (++i < uniqueItems.length) {
-        var indexes = array_get_indexes_1.getIndexesOf(uniqueItems[i], array);
-        // while there's still an extra instance of the item...
-        while ((--indexes.length) > 0)
-            duplicatedItems.push(uniqueItems[i]);
-    }
-    return duplicatedItems;
+export function getDuplicates(array) {
+    let uniqueItems = [], duplicates = [];
+    array.forEach((item) => {
+        if (not(arrayHas(item, uniqueItems)))
+            uniqueItems.push(item);
+        else
+            duplicates.push(item);
+    });
+    return duplicates;
 }
-exports.getDuplicates = getDuplicates;
