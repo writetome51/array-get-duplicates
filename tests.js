@@ -1,4 +1,4 @@
-import { getDuplicates } from './index.js';
+import { getDuplicates } from 'index.js';
 // Test 1: it can spot array duplicates:
 let arr = [1, [2, 3], 10, '', 4, 5, 6, 7, 8, 9, 13, [2, 3]];
 let result = getDuplicates(arr);

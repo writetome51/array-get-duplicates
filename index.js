@@ -1,9 +1,10 @@
-import { arrayHas } from '@writetome51/array-has';
-import { not } from '@writetome51/not';
+import {arrayHas} from '@writetome51/array-has';
+import {not} from '@writetome51/not';
+
 
 // Returns every extra instance of each array item.
 
-export function getDuplicates(array): any[] {
+export function getDuplicates(array) {
 	let uniqueItems = [], duplicates = [];
 
 	array.forEach((item) => {
